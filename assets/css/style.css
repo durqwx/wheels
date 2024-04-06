@@ -1,0 +1,1035 @@
+  * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    transition: .5s;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+@font-face {
+    font-family: "gl";
+    src: url("../fonts/geometria_light.otf");
+}
+
+@font-face {
+    font-family: "gli";
+    src: url("../fonts/geometria_lightitalic.otf");
+}
+
+@font-face {
+    font-family: "gm";
+    src: url("../fonts/geometria_medium.otf");
+}
+
+@font-face {
+    font-family: "gb";
+    src: url("../fonts/geometria_bold.otf");
+}
+
+@font-face {
+    font-family: "geb";
+    src: url("../fonts/geometria_extrabold.otf");
+}
+
+@font-face {
+    font-family: "mak";
+    src: url("../fonts/MAK-bold.otf");
+}
+
+.content {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+/* header start */
+.header {
+    background-color: #000;
+}
+
+.header-block {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    gap: 40px;
+}
+
+.header-nav a {
+    color: white;
+    font-family: "gl";
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header-nav a:hover {
+    color: rgb(158, 158, 158);
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.burg {
+    display: none;
+}
+
+#burger,
+[for=burger] {
+    display: none;
+}
+
+/* header end */
+
+/* banner start */
+.banner {
+    background-image: url("../img/index/banner.png");
+    height: 724px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-marg {
+    margin-left: 900px;
+    padding-top: 235px;
+}
+
+.banner h1 {
+    font-family: "mak";
+    font-size: 64px;
+    color: black;
+    padding-bottom: 70px;
+    text-transform: uppercase;
+}
+
+.banner p {
+    font-family: "gli";
+    font-size: 32px;
+    color: white;
+    padding-bottom: 45px;
+    font-weight: 200;
+    text-transform: uppercase;
+    width: 580px;
+}
+
+.banner-btn {
+    background-color: white;
+    font-family: "gm";
+    font-size: 20px;
+    padding: 15px 30px;
+    color: #333;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    border-radius: 5px;
+}
+
+.banner-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* banner end */
+
+/* katalog start */
+.katalog {
+    padding: 100px 0;
+}
+
+.katalog h2 {
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    font-family: "mak";
+    color: #000;
+    font-size: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.kat-first-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 460px;
+    height: 544px;
+    background-color: #fff;
+    box-shadow: 5px 20px 60px rgba(51, 51, 51, 0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.card h3 {
+    font-family: "gb";
+    font-size: 32px;
+    color: black;
+}
+
+.card h4 {
+    font-family: "geb";
+    font-size: 36px;
+    color: #2F2828;
+}
+
+.kat-btn {
+    margin-top: 18px;
+    background-color: #000;
+    font-family: "gm";
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 16px 45px;
+    color: white;
+    font-family: "gm";
+    font-size: 16px;
+    border: 2px solid #000;
+}
+
+.kat-btn:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+/* katalog end */
+
+/* podpis start */
+.pod {
+    background-image: url("../img/index/podpiska.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 255px;
+}
+
+.pod-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.pod-block h2 {
+    font-family: "mak";
+    font-size: 32px;
+    color: white;
+    width: 447px;
+    text-transform: uppercase;
+}
+
+.pod-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+}
+
+.input-pod {
+    background-color: #fff;
+    width: 360px;
+    height: 76px;
+    font-family: "gl";
+    font-size: 24px;
+    padding-left: 30px;
+    outline: none;
+}
+
+.input-pod::placeholder {
+    font-family: "gl";
+    font-size: 24px;
+}
+
+.pod-btn {
+    background-color: #333;
+    width: 190px;
+    height: 60px;
+    color: #fff;
+    font-family: "Gm";
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.pod-btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* podpis end */
+
+/*footer start*/
+footer {
+    padding: 50px 0;
+    background-color: black;
+    font-family: "gl";
+    color: #fff;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+}
+
+.footer-logo p {
+    font-size: 11px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.footer-nav a {
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer-nav a:hover {
+    color: rgb(158, 158, 158);
+}
+
+.footer-kontacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-kontacts a {
+    color: white;
+    font-size: 16px;
+}
+
+.footer-kontacts a:hover {
+    color: rgb(158, 158, 158);
+}
+
+/*footer end*/
+
+
+/* START TOVAR CARD */
+.tovar {
+    padding: 155px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.tovar img {
+    width: 524px;
+    height: 524px;
+}
+
+.tovar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 35px;
+}
+
+.tovar-head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tovar-head h2 {
+    text-transform: uppercase;
+    font-family: "Gb";
+    font-size: 36px;
+}
+
+.tovar-head p {
+    font-size: 24px;
+    font-family: "Gl";
+    width: 800px;
+}
+
+.tovar-info-first {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: "Gm";
+}
+
+.tovar-info-first p {
+    font-family: "Gl";
+    font-size: 24px;
+}
+
+.tovar-buy {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.tovar-buy p {
+    font-family: "Geb";
+    font-size: 36px;
+    color: #2F2828;
+}
+
+.tovar-buy a {
+    font-family: "Gm";
+    background-color: #000;
+    padding: 15px 44px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.tovar-buy a:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+/* END TOVAR CARD */
+
+/* ADMIN START */
+.admin-mane {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-block img {
+    padding-top: 45px;
+}
+
+.left-block {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 462px;
+    font-family: "Gm";
+}
+
+.plus-tovar {
+    padding: 80px 0 930px 0;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.exit {
+    padding-bottom: 60px;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.right-block h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 50px 0;
+    font-family: "Gb";
+}
+
+.admin-first-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.admin-card {
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 5px 20px 60px rgba(51, 51, 51, 0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.admin-card h3 {
+    font-family: "gb";
+    font-size: 32px;
+    color: black;
+}
+
+.admin-card h4 {
+    font-family: "geb";
+    font-size: 36px;
+    color: #2F2828;
+}
+
+.admin-btn {
+    margin-top: 18px;
+    background-color: #000;
+    font-family: "gm";
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 16px 45px;
+    color: white;
+    font-family: "gm";
+    font-size: 16px;
+    border: 2px solid #000;
+}
+
+.admin-btn:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.knopki {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.admin-cards-mane {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 50px;
+}
+
+/* ADMIN END */
+
+/* start form  */
+
+.sign {
+    padding: 200px 0;
+}
+
+.sign-block {
+    border-radius: 10px;
+    background-color: #333;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.sign-block h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: "Geb";
+    padding-bottom: 40px;
+}
+
+.sign-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sign-text input {
+    border-radius: 8px;
+    padding: 10px;
+    outline: none;
+}
+
+.sign-text a {
+    background-color: #66ff00;
+    color: white;
+    font-family: "gm";
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 14px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.label-text {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: white;
+    font-family: "Gl";
+    padding-bottom: 7px;
+}
+
+.new-akk {
+    padding-top: 5px;
+    color: white;
+    font-size: 14px;
+    font-family: "gli";
+}
+
+.sozdat {
+    color: #66ff00;
+}
+
+/* end form  */
+
+/* delite start */
+.delite {
+    padding: 250px;
+}
+
+.delite-block {
+    border-radius: 10px;
+    background-color: #333;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.delite-block h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: "Geb";
+    padding-bottom: 40px;
+}
+
+.yes-no {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.yes-no a {
+    background-color: white;
+    color: #333;
+    font-family: "gm";
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 14px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+/* delite end */
+
+@media screen and (max-width:768px) {
+    .content {
+        max-width: 698px;
+    }
+
+    /* header start */
+
+    .header-block {
+        height: 50px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-icons {
+        display: none;
+    }
+
+    .logotip {
+        width: 120px;
+    }
+
+    [for=burger] {
+        display: flex;
+        position: fixed;
+        right: 7px;
+        top: 7px;
+        z-index: 100000;
+    }
+
+    [for=burger]::before {
+        content: url(../img/index/header/burg.svg);
+    }
+
+    .burg {
+        position: fixed;
+        width: 40%;
+        background-color: rgb(0, 0, 0);
+        padding: 20px;
+        gap: 15px;
+        top: 5px;
+        right: 5px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        z-index: 10000;
+    }
+
+    .burg a {
+        font-family: "gl";
+        color: white;
+    }
+
+    #burger:checked+[for=burger]+.burg {
+        display: flex;
+        animation: show 0.5s;
+    }
+
+    #burger:checked+[for=burger]::before {
+        content: url(../img/index/header/close.svg);
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    /* header end */
+
+    /* banner start */
+    .banner {
+        height: 289.47px;
+    }
+
+    .banner-marg {
+        margin-left: 393px;
+        padding-top: 77px;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+        padding-bottom: 40px;
+    }
+
+    .banner p {
+        font-size: 17px;
+        padding-bottom: 32px;
+        width: 310px;
+    }
+
+    .banner-btn {
+        font-size: 10px;
+        padding: 7px 14px;
+        border-radius: 5px;
+    }
+
+    /* katalog start */
+    .katalog {
+        padding: 50px 0;
+    }
+
+    .katalog h2 {
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .cards {
+        gap: 10px;
+    }
+
+    .kat-first-block {
+        gap: 10px;
+    }
+
+    .card {
+        width: 216px;
+        height: 256px;
+        gap: 4px;
+    }
+
+    .card img {
+        width: 130px;
+    }
+
+    .card h3 {
+        font-size: 15px;
+    }
+
+    .card h4 {
+        font-size: 16px;
+    }
+
+    .kat-btn {
+        margin-top: 8px;
+        font-size: 9px;
+        padding: 8px 20px;
+    }
+
+    /* katalog end */
+
+    /* podpis start */
+    .pod {
+        width: 100%;
+        height: 150px;
+    }
+
+    .pod-block {
+        padding: 20px 0;
+    }
+
+    .pod-block h2 {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .pod-forms {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .pod-form {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: end;
+        gap: 10px;
+    }
+
+    .input-pod {
+        width: 260px;
+        height: 40px;
+        font-size: 14px;
+        padding-left: 30px;
+    }
+
+    .input-pod::placeholder {
+        font-size: 14px;
+    }
+
+    .pod-btn {
+        width: 120px;
+        height: 30px;
+        padding: 10px 28px;
+        font-size: 8px;
+    }
+
+    /* podpis end */
+
+    /*footer start*/
+    .footer-logo img {
+        width: 100px;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    /*footer end*/
+
+    /* START TOVAR CARD */
+    .tovar {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .tovar img {
+        width: 324px;
+        height: 324px;
+    }
+
+    .tovar-text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 35px;
+    }
+
+    .tovar-head {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tovar-head h2 {
+        text-transform: uppercase;
+        font-family: "Gb";
+        font-size: 26px;
+    }
+
+    .tovar-head p {
+        font-size: 24px;
+        font-family: "Gl";
+        width: 700px;
+    }
+
+    .tovar-info-first {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-family: "Gm";
+    }
+
+    .tovar-info-first p {
+        font-family: "Gl";
+        font-size: 24px;
+    }
+
+    .tovar-buy {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .tovar-buy p {
+        font-family: "Geb";
+        font-size: 36px;
+        color: #2F2828;
+    }
+
+    .tovar-buy a {
+        font-family: "Gm";
+        background-color: #000;
+        padding: 15px 44px;
+        text-transform: uppercase;
+        color: #fff;
+        border: 2px solid #000;
+        border-radius: 5px;
+    }
+
+    .tovar-buy a:hover {
+        background-color: transparent;
+        color: #000;
+    }
+
+    /* END TOVAR CARD */
+    
+    .left-block img {
+        padding-top: 25px;
+        width: 130px;
+    }
+    
+    .left-block {
+        padding:0 10px;
+        width: 200px;
+    }
+    
+    .plus-tovar {
+        padding: 80px 0 300px 0;
+        font-size: 12px;
+    }
+    
+    .exit {
+        padding-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .right-block h2 {
+        font-size: 20px;
+        padding: 30px 0;
+    }
+    
+    .admin-first-block {
+        gap: 8px;
+    }
+
+    .admin-card img {
+        width: 90px;
+    }
+    
+    .admin-card {
+        width: 150px;
+        height: 176px;
+        gap: 4px;
+    }
+    
+    .admin-card h3 {
+        font-size: 10px;
+    }
+    
+    .admin-card h4 {
+        font-size: 11px;
+    }
+    
+    .admin-btn {
+        margin-top: 10px;
+        font-size: 4px;
+        padding: 4px 14px;
+    }
+    
+    .knopki {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .knopki a {
+        font-size: 7px;
+        font-family: "gl";
+    }
+    
+    .admin-cards-mane {
+        gap: 8px;
+    }
+    
+    /* ADMIN END */
+
+
+    /* delite start */
+    .delite {
+        padding: 250px 50px;
+    }
+    /* delite end */
+}
